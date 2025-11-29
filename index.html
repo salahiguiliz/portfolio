@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salah-Eddine Iguiliz | Machine Learning Engineer</title>
+    <meta name="description"
+        content="Portfolio of Salah-Eddine Iguiliz, a Machine Learning Engineer specializing in production-grade AI, optimization, and LLM agents.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="container">
+        <!-- Sidebar: Profile, Skills, Contact -->
+        <aside class="sidebar">
+            <div>
+                <header class="profile-header">
+                    <h1 class="gradient-text">Salah-Eddine Iguiliz</h1>
+                    <h2>Machine Learning Engineer</h2>
+                </header>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-code"></i> Core Tech Stack</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item" data-tech="python">Python (Expert)</li>
+                        <li class="skill-item" data-tech="cpp">C++</li>
+                        <li class="skill-item" data-tech="sql">SQL</li>
+                        <li class="skill-item" data-tech="bash">Bash</li>
+                        <li class="skill-item" data-tech="java">Java</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-brain"></i> ML & DL</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item" data-tech="pytorch">PyTorch</li>
+                        <li class="skill-item" data-tech="tensorflow">TensorFlow/Keras</li>
+                        <li class="skill-item" data-tech="transformers">Transformers</li>
+                        <li class="skill-item" data-tech="langchain">LangChain/Agents</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-cloud"></i> Ops & Cloud</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item" data-tech="aws">AWS (SageMaker, Lambda)</li>
+                        <li class="skill-item" data-tech="docker">Docker/Kubernetes</li>
+                        <li class="skill-item" data-tech="mlflow">MLflow/Grafana</li>
+                        <li class="skill-item" data-tech="spark">Spark/Big Data</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <ul class="cert-list">
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> AWS Cloud Architect</li>
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> Spark and Data Lakes</li>
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> Generative AI with AWS</li>
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> Cybersecurity Basics</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Mentoring</h3>
+                    <ul class="mentor-list">
+                        <li class="mentor-item">
+                            <strong>Morocco AI Hackathons</strong><br>
+                            <span class="mentor-detail">InovAI2024, GENAI2023</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-links">
+                <a href="https://github.com/salahiguiliz" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/salah-eddine-i-8822b9191/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:salahiguiliz@outlook.fr" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section id="hero" class="hero-section reveal">
+                <h1 class="hero-headline">Designing, optimizing, and industrializing complex AI models.</h1>
+                <p class="hero-subheadline">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="reveal">
+                <h2 class="section-title">About</h2>
+                <p class="about-text">
+                    I am a Machine Learning Engineer passionate about bridging the gap between theoretical research and
+                    robust production systems. With a background from <span class="highlight">CentraleSupélec</span> and
+                    industry experience at <span class="highlight">Safran</span>, I specialize in performance
+                    optimization (reducing compute by 40%+) and deploying scalable AI architectures on AWS. Whether it’s
+                    fine-tuning LLMs or engineering anomaly detection for avionics, I build software that is efficient,
+                    reliable, and impactful.
+                </p>
+            </section>
+
+            <!-- Featured Projects -->
+            <section id="projects" class="reveal">
+                <h2 class="section-title">Featured Projects</h2>
+
+                <!-- Project A -->
+                <article class="project-card" data-tech="python numba aws">
+                    <div class="project-header">
+                        <h3 class="project-title">Avionics Data Pipeline Optimization</h3>
+                        <span class="project-metrics">40% Compute Reduction</span>
+                    </div>
+                    <p class="project-description">
+                        Architected a high-performance pipeline using Python for Safran Helicopter Engines. Implemented
+                        JIT compilation with Numba, parallel processing, and memory I/O optimization to handle massive
+                        avionics datasets. Redefined offline software architecture for robust switching.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Numba</span>
+                        <span class="tag">Parallel Processing</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <!-- Mermaid Diagram Placeholder -->
+                    <div class="mermaid">
+                        graph LR
+                        A[Raw Avionics Data] --> B[Ingestion]
+                        B --> C{JIT Compiler (Numba)}
+                        C -->|Parallelized| D[Processing Nodes]
+                        D --> E[Optimized Output]
+                        style C fill:#3B82F6,stroke:#333,stroke-width:2px,color:#fff
+                    </div>
+                </article>
+
+                <!-- Project B -->
+                <article class="project-card" data-tech="pytorch tensorflow deep-learning">
+                    <div class="project-header">
+                        <h3 class="project-title">Critical Anomaly Detection</h3>
+                        <span class="project-metrics">Patent Filed</span>
+                    </div>
+                    <p class="project-description">
+                        Designed and deployed a custom Deep Learning anomaly detection and correction module for
+                        helicopter engine safety. The solution was so novel it led to a patent filing, securing the
+                        company’s IP.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Time Series</span>
+                        <span class="tag">Patent</span>
+                    </div>
+                </article>
+
+                <!-- Project C -->
+                <article class="project-card" data-tech="langchain transformers aws">
+                    <div class="project-header">
+                        <h3 class="project-title">Enterprise RAG Chatbot</h3>
+                        <span class="project-metrics">Reduced Time-to-Answer</span>
+                    </div>
+                    <p class="project-description">
+                        Developed an end-to-end conversational AI using LangChain and AI Agents. Connected LLMs to
+                        vector databases to create a Retrieval-Augmented Generation (RAG) system for technical support
+                        teams.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">LangChain</span>
+                        <span class="tag">RAG</span>
+                        <span class="tag">Vector DB</span>
+                        <span class="tag">LLM</span>
+                    </div>
+                </article>
+
+                <!-- Project D -->
+                <article class="project-card" data-tech="transformers pytorch">
+                    <div class="project-header">
+                        <h3 class="project-title">Moroccan Darija AI (Open Source)</h3>
+                        <span class="project-metrics">New Benchmarks</span>
+                    </div>
+                    <p class="project-description">
+                        Fine-tuned LLMs on custom datasets and developed Text-to-Speech (TTS) systems adapted to Darija
+                        prosody. Created new benchmarks for the community.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Fine-tuning</span>
+                        <span class="tag">Open Source</span>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Academic Projects -->
+            <section id="academic-projects" class="reveal">
+                <h2 class="section-title">Academic Projects</h2>
+
+                <article class="project-card" data-tech="transformers nlp python">
+                    <h3 class="project-title">Medical Text Parser</h3>
+                    <p class="project-description">
+                        Competition by CentraleSupélec/Illuin Technology. Implemented NER, NLU, and semantic search
+                        using Transformers (SciBERT, BioBERT, ElectraMed).
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Transformers</span>
+                        <span class="tag">SciBERT</span>
+                        <span class="tag">Streamlit</span>
+                    </div>
+                </article>
+
+                <article class="project-card" data-tech="deep-learning pytorch">
+                    <h3 class="project-title">Multimodal Emotion Recognition</h3>
+                    <p class="project-description">
+                        Implemented Unimodal (Wav2vec2, DistilBERT), Bimodal, and Trimodal (MOSEI-UMONS) approaches for
+                        emotion recognition.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Multimodal</span>
+                        <span class="tag">Wav2vec2</span>
+                        <span class="tag">DistilBERT</span>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="reveal">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Machine Learning Engineer <span class="experience-company">@ Safran
+                            Helicopter Engines</span></h3>
+                    <span class="experience-date">Nov 2022 – Present</span>
+                    <ul class="experience-list">
+                        <li>Architected data pipelines reducing compute time by 40% using Numba/Cython.</li>
+                        <li>Filed a patent for a time-series anomaly detection algorithm.</li>
+                        <li>Deployed automated retraining pipelines on AWS using MLflow and Grafana.</li>
+                        <li>Developed end-to-end software decoder (ARINC 429) from spec to production.</li>
+                        <li>Built AI Agent chatbot for technical database querying.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Apprentice Software Engineer <span class="experience-company">@
+                            Synchrotron SOLEIL</span></h3>
+                    <span class="experience-date">Jan 2020 – Sept 2022</span>
+                    <ul class="experience-list">
+                        <li>Deployed CNN models for diffraction data analysis via web interface.</li>
+                        <li>Built CI/CD pipelines and automated testing (Selenium) for micro-services.</li>
+                        <li>Implemented Oracle DB anonymization for GDPR compliance.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="reveal">
+                <h2 class="section-title">Education</h2>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">CentraleSupélec</h3>
+                    <span class="experience-date">2019 – 2022</span>
+                    <p class="project-description">Master of Science in Engineering (Diplôme d’Ingénieur).
+                        Specialization in Artificial Intelligence.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="experience-title">Preparatory Classes for "Grandes Écoles"</h3>
+                    <span class="experience-date">2017 – 2019</span>
+                    <p class="project-description">Lycée Georges Cabanis. Intensive preparation in Mathematics and
+                        Physics.</p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="reveal">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="about-text" style="margin-bottom: 2rem;">
+                    I am currently open to new opportunities. Whether you have a question or just want to say hi, I'll
+                    try my best to get back to you!
+                </p>
+                <div class="contact-methods" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                    <a href="mailto:salahiguiliz@outlook.fr" class="btn btn-outline"
+                        style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-envelope"></i> Say Hello
+                    </a>
+                    <a href="https://www.linkedin.com/in/salah-eddine-i-8822b9191/" target="_blank"
+                        class="btn btn-outline" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/salahiguiliz" target="_blank" class="btn btn-outline"
+                        style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer
+                style="margin-top: 4rem; color: var(--text-secondary); font-size: 0.9rem; border-top: 1px solid var(--border-color); padding-top: 2rem;">
+                <p>&copy; 2025 Salah-Eddine Iguiliz. Built with performance in mind.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
