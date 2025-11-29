@@ -155,4 +155,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initParticles();
     animate();
+
+    // --- 7. Mobile Sidebar Toggle ---
+    const toggleBtn = document.getElementById('toggle-sidebar-btn');
+    const sidebarSections = document.querySelectorAll('.sidebar-section');
+
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            sidebarSections.forEach(section => {
+                section.classList.toggle('active');
+            });
+
+            // Toggle button text
+            const isVisible = sidebarSections[0].classList.contains('active');
+            toggleBtn.innerHTML = isVisible
+                ? '<i class="fas fa-times"></i> Hide Details'
+                : '<i class="fas fa-bars"></i> Show Details';
+        });
+    }
 });
